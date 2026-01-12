@@ -168,9 +168,9 @@ def sorting_evaluation_function(result, action):
         
         # [HARD MODE] Forbidden Algorithm Names - DISABLED for now
         # These were causing all GPT-generated algorithms to fail
-        # forbidden_names = [
-        #     'merge', 'quick', 'heap', 'shell', 'tim', 'intro', 'radix', 'pivot', 'partition'
-        # ]
+        forbidden_names = [
+            'merge', 'quick', 'heap', 'shell', 'tim', 'intro', 'radix', 'pivot', 'partition'
+        ]
         
         for pattern in forbidden_patterns:
             if pattern in code_lower:
