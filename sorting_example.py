@@ -176,9 +176,9 @@ def sorting_evaluation_function(result, action):
             if pattern in code_lower:
                 return 0.0001 # Cheating with libraries
 
-        # for name in forbidden_names:
-        #     if name in code_lower:
-        #         return 0.0001 
+        for name in forbidden_names:
+            if name in code_lower:
+                return 0.0001 
 
     # 3. Check Correctness
     sorted_arr = result.get('sorted', [])
